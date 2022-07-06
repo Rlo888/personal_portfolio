@@ -1,0 +1,39 @@
+:root{
+    font-size:62.5%;
+}
+*{
+    margin:0;
+    border:0;
+    box-sizing:border-box;
+
+}
+body{
+    font-family:'Raleway', sans-serif;
+    background-color:bisque;
+    font-size:2rem;
+}
+.welcome-section{
+
+}
+#nav-bar{
+
+    background-color:aquamarine;
+    display:flex;
+    justify-content:space-around;
+
+
+
+}
+#triforce{
+    display:flex;
+max-height:10rem;
+max-width:10rem;
+background-color: blue;
+
+}
+
+.nav-list{
+background-color: blue;
+display:inline-block;
+justify-content:space-evenly;
+}

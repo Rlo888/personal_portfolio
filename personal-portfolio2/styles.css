@@ -1,0 +1,145 @@
+/*UTILITIES*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-size:62.5%;
+}
+
+body{
+    font-family:sans-serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+li{
+    list-style:none;
+}
+/*NAVBAR STYLING STARTS*/
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background-color:beige;
+    padding:2rem;
+    color:#fff;
+}
+
+.nav-links a{
+    color:blue;
+    font-size: 2rem;
+}
+/*LOGO*/
+.logo{
+    font-size:3.2rem;
+    color:blue;
+}
+/*NAVBAR MENU*/
+.menu{
+    display:flex;
+    gap:1em;
+    font-size:1.8rem;
+
+}
+
+.menu li:hover{
+    background-color:azure;
+    border-radius:.5rem;
+    transition:.3s ease;
+
+}
+
+.menu li{
+    padding:.5rem 1.5rem;
+}
+/*DROPDOWN MENU*/
+.projects{
+    position:relative;
+}
+
+.dropdown{
+    background-color:cornflowerblue;
+    padding:1rem 0;
+    position:absolute;
+    display:none;
+    border-radius:.8rem;
+    top:3.5rem;
+}
+
+.dropdown li + li{
+    margin-top:1rem;
+}
+
+.dropdown li{
+    padding:0.5rem 1rem;
+    width:8rem;
+    text-align:center;
+
+}
+
+.dropdown li:hover{
+    background-color:blueviolet;
+
+}
+
+.projects:hover .dropdown{
+    display:block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+input[type=checkbox]{
+    display:none;
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger{
+    display:block;
+    font-size:2.4rem;
+    user-select:auto;
+    color:crimson;
+}
+
+/*APPLYING MEDIA QUERIES*/
+
+/*@media (max-width:768px){
+    .menu{
+        display:none;
+        position:absolute;
+        background-color:teal;
+        right:0;
+        left:0;
+        text-align:center;
+        padding:1.6rem 0;
+    }
+    .menu li:hover{
+        display:inline-block;
+        background-color:chocolate;
+        transition:0.3 ease;
+    }
+    .menu li + li {
+        margin-top:1.2rem;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display:block;
+    }
+
+    .hamburger{
+        display:block;
+    }
+
+    .dropdown{
+        left:50%;
+        top:3rem;
+        transform:translateX(35%);
+    }
+
+    .dropdown li:hover{
+        background-color:bisque;
+    }
+}
+
