@@ -115,16 +115,94 @@ background-color:var(--blue);
     color:var(--darker-eggshell);
 }
 
-h2{
+.hi{
     font-weight:900;
-
+    padding-bottom:3rem;
+   
 }
 
 p{
     font-family:Raleway;
     padding-top:2rem;
+    padding-bottom:3rem;
 }
 
 .projects-grid{
     display:grid;
+    justify-content:center;
+    background-color:var(--darker-eggshell);
+    gap:5rem;
+    border-bottom: 2rem;
+    padding-bottom: 3rem;
+
 }
+
+.projects-title{
+    background-color:var(--darker-eggshell);
+    margin-top:0;
+    border-bottom: 2rem;
+}
+
+.project-image{
+    height:30rem;
+    width: 30rem;
+    object-fit:fill;
+    padding:1.5rem;
+    border:.5rem double black;
+    background-color:var(--light-green)
+
+}
+
+.project-title{
+    text-align: center;
+    margin-top:0;
+    background-color:var(--blue);
+    color:var(--eggshell-color);
+    
+}
+
+.contact-header{
+    
+    font-size:3rem;
+text-align:center;
+padding-top:6rem;
+}
+
+.contact-section-header{
+   display:flex;
+   flex-direction: column;
+   justify-content:space-evenly;
+    height:30rem;
+    background-color:var(--light-green);
+}
+
+.btn-contact:hover{
+    color:black;
+}
+
+.contact-icons-group{
+    display:flex;
+   justify-content:space-evenly;
+}
+
+i{
+    
+    width:6rem;
+    height:6rem;
+    font-size: 5rem;
+    color:var(--blue);
+    
+}
+
+
+
+.links-text{
+    font-size:2rem;
+    color:var(--blue);
+}
+
+@media screen and (min-width: 480px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
